@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repositório de Processos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a class="back-button" href="../index.html">Voltar</a>
+    <h1>Repositório de Processos</h1>
+    <div class="user-menu">
+      <div class="user-info">
+        <span class="user-icon">👤</span>
+        <span class="user-name">Felipe Alves</span>
+      </div>
+      <div class="dropdown-menu">
+        <a href="./PerfildeUsuario/index.html">Perfis de Usuário</a>
+        <a href="./userdev/FelipeAlves.html">Configurações</a>
+        <a href="../index.html">Sair</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sistema de Filtro -->
+  <section class="filters">
+    <div class="filter-item">
+      <label for="date">Data:</label>
+      <input type="date" id="date">
+    </div>
+    <div class="filter-item">
+      <label for="category">Categoria:</label>
+      <input type="text" id="category" placeholder="Categoria" value="Marketing">
+    </div>
+    <div class="filter-item">
+      <label for="search">Processo:</label>
+      <input type="text" id="search" placeholder="Buscar por texto">
+    </div>
+    <button class="search-button">Resultados</button>
+  </section>
+
+  <!-- Área Central -->
+  <main>
+    <div class="container">
+      <div class="process-grid">
+        <a href="./Visualizacao/MKT01/index.html" class="process-item">
+          <img src="../Imagens/pasta.svg" alt="Pasta">
+          <span>Processo MKT.01</span>
+          <span class="date">10.09.2024</span>
+        </a>
+        <a href="./Visualizacao/MKT02/index.html" class="process-item">
+          <img src="../Imagens/pasta.svg" alt="Pasta">
+          <span>Processo MKT.02</span>
+          <span class="date">20.09.2024</span>
+        </a>
+        <a href="./Visualizacao/MKT03/index.html" class="process-item">
+          <img src="../Imagens/pasta.svg" alt="Pasta">
+          <span>Processo MKT.03</span>
+          <span class="date">15.10.2024</span>
+        </a>
+        <a href="./Visualizacao/MKT04/index.html" class="process-item">
+          <img src="../Imagens/pasta.svg" alt="Pasta">
+          <span>Processo MKT.04</span>
+          <span class="date">11.11.2024</span>
+        </a>
+      </div>
+      <div class="add-button">
+        <p>Novo Processo</p>
+      </div>
+    </div>
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <h2>Cadastrar Novo Processo</h2>
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome do Processo:</label>
+            <input type="text" id="nome" placeholder="Digite o nome do processo" required>
+          </div>
+          <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+          </div>
+          <div class="form-group">
+            <label for="diretor">Gestor de Projeto:</label>
+            <select id="diretor" required>
+              <option disabled selected>Selecione alguém</option>
+              <option>Marcela Silva</option>
+              <option>Jorge Cruz</option>
+              <option>Silas Rodrigues</option>
+              <option>Eliel Lino</option>
+              <option>Mauricio de Souza</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="processo">Processo:</label>
+            <textarea id="processo" rows="4" placeholder="Detalhes do processo" required></textarea>
+            <p id="error-message" class="error-message">Preencha todos os campos.</p>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" id="add-processo" class="btn">Adicionar</button>
+            <button type="button" id="cancelar" class="btn cancelar">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

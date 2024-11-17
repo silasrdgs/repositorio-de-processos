@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<Header>
+    <a href="../index.html" class="header">
+        <p>CRUZEIRO TECH</p>
+        <h1>REPOSITÓRIO DE PROCESSOS</h1>
+    </a>
+</Header>
+
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="../Imagens/LogoCruzeiro.png" alt="Logo" class="background-logo">
+        </div>
+        <div class="form-section">
+            <h2>RECUPERAÇÃO DE SENHA</h2>
+            <p>Insira seu e-mail cadastrado no campo abaixo. <br> Você irá receber as instruções em seu e-mail para recuperar o acesso a sua conta.</p>
+            <form id="passwordRecoveryForm" onsubmit="checkEmail(event)">
+                <label for="email">Endereço de e-mail</label>
+                <input type="email" id="email" placeholder="emaildeteste@exemplo.com" required>
+                <button type="submit">Recuperar Senha</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="errorPopup" class="popup">
+        <div class="popup-content">
+            <h2>USUÁRIO NÃO ENCONTRADO</h2>
+            <p>
+                Nenhum usuário foi encontrado com o endereço de e-mail <span id="enteredEmail"></span>.
+            </p>
+            <button onclick="closePopup()">INSERIR E-MAIL NOVAMENTE</button>
+        </div>
+    </div>
+
+    <div id="okayPopup" class="popup">
+        <div class="popup-content">
+            <h2>EMAIL ENCAMINHADO</h2>
+            <p>
+                Siga as instruções enviadas para <span id="enteredEmailOkay"></span> para recuperar sua senha.
+            </p>
+            <button onclick="closePopupOkay()">VOLTAR PARA A PAGINA INICIAL</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

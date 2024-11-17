@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processo MKT.03 - Recuperado</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <a class="back-button" href="./index.html">Voltar</a>
+    <h1><span class="normal">Setor:</span> Marketing</h1>
+    <div class="user-menu1">
+      <div class="user-info">
+        <span class="user-icon">👤</span>
+        <span class="user-name">Felipe Alves</span>
+      </div>
+      <div class="dropdown-menu">
+        <a href="../../PerfildeUsuario/index.html">Perfis de Usuário</a>
+        <a href="../../userdev/FelipeAlves.html">Configurações</a>
+        <a href="../index.html">Sair</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="process-header">
+      <div class="process-info">
+        <h1 class="vers01">Processo MKT.03</h1>
+        <div class="container-datavers">
+          <p>Último acesso: 15.10.2024</p>
+          <p class="text-2">Versão 01.01</p>
+        </div>
+        <p><span class="editedP">Editado por: Marcela Silva</span></p>
+      </div>
+      <div class="actions">
+        <div class="version-dropdown">
+          <button class="version-button">Versões ▼</button>
+          <ul class="version-menu">
+            <li><a href="./index.html">Versão 01.03</a></li>
+            <li><a href="./versao02.html">Versão 01.02</a></li>
+            <li><a href="">Versão 01.01</a></li>
+            <li><a href="../logsdeversao/logMKT03.html">Log de Versões</a></li>
+          </ul>
+        </div>
+        <button id="downloadButton" class="action-button">📥 Baixar PDF</button>
+        <button id="editButton" class="action-button">✎ Editar</button>
+      </div>
+    </div>
+
+    <main class="process-content">
+      <div class="overlay">
+        <h2>VISUALIZAÇÃO LIMITADA</h2>
+        <p>Política de Compliance</p>
+      </div>
+      <img src="../../../Imagens/Process.png" alt="Diagrama do Processo">
+    </main>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>ACESSO NEGADO</h2>
+      <p>Você não tem acesso para <strong>editar</strong> esse documento.</p>
+      <button id="closePopup" class="popup-close-btn">SAIR</button>
+    </div>
+  </div>
+
+  <div id="downloadPopup" class="popup hidden">
+    <div class="popup-content">
+      <h2>DOWNLOAD INDISPONÍVEL</h2>
+      <p>O download deste documento não está disponível no momento.</p>
+      <button id="closeDownloadPopup" class="popup-close-btn">SAIR</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

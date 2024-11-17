@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações do Usuário - Jorge Cru</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <a class="back-button" href="../index.html">Voltar</a>
+    <h1>Configurações do Usuário</h1>
+    <div class="user-menu">
+      <div class="user-info">
+        <span class="user-icon">👤</span>
+        <span class="user-name">Felipe Alves</span>
+      </div>
+      <div class="dropdown-menu">
+        <a href="../index.html">Perfis de Usuário</a>
+        <a href="../../userdev/FelipeAlves.html">Configurações</a>
+        <a href="../../../../index.html">Sair</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="profile-icon">👤</div>
+      <div id="Nome" class="name">Jorge Cruz</div>
+
+      <div class="form-group">
+        <label for="departamento">Departamento</label>
+        <input type="text" id="departamento" value="Data Engineer">
+      </div>
+
+      <div class="form-group">
+        <label for="projeto">Projeto Atual</label>
+        <input type="text" id="projeto" value="Marketing">
+      </div>
+
+      <div class="form-group">
+        <label for="nivel-acesso">Nível de Acesso</label>
+        <select id="nivel-acesso">
+          <option>Gestor</option>
+          <option>Administrador</option>
+          <option>Analista</option>
+          <option selected>Desenvolvedor</option>
+        </select>
+      </div>
+      <div class="button-container">
+        <button id="salvar">Salvar</button>
+      </div>
+    </div>
+  </main>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>INFORMAÇÕES SALVA</h2>
+      <p>
+        As informações do usuário <span id="nomeApresentado"></span> foram salvas.
+      </p>
+      <button onclick="fecharPopup()">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
